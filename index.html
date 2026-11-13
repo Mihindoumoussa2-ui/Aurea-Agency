@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUREA AGENCY - Hôtesses d'accueil VIP à Libreville</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Georgia',serif;background:#F8F3E8;color:#111}
+  .top{padding:28px 20px 10px;text-align:center;background:#F8F3E8}
+  .top img{width:210px;max-width:70vw}
+  .top p{letter-spacing:3px;font-size:11px;color:#8A6A1A;margin-top:6px;text-transform:uppercase}
+  .phone-top{font-family:Arial,sans-serif;margin-top:12px}
+  .phone-top a{background:#111;color:#F5E6B8;text-decoration:none;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:bold;display:inline-block}
+  nav{background:#F8F3E8;border-top:1px solid #E5D9B8;border-bottom:1px solid #E5D9B8;padding:14px;text-align:center;position:sticky;top:0;z-index:10}
+  nav a{color:#111;text-decoration:none;margin:0 14px;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+  nav a:hover{color:#B8962E}
+  .hero{position:relative;background:#111;color:white;overflow:hidden}
+  .hero img{width:100%;height:520px;object-fit:cover;display:block}
+  .hero-box{position:absolute;left:5%;bottom:8%;background:rgba(10,10,10,.88);padding:28px;max-width:520px;border-left:4px solid #D4AF37}
+  .hero-box h1{font-size:38px;line-height:1.15;color:#F5E6B8;font-weight:normal}
+  .hero-box p{margin:14px 0 20px;font-family:Arial,sans-serif;font-size:15px;line-height:1.5;color:#eee}
+  .btn{display:inline-block;padding:13px 24px;border-radius:6px;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold;font-size:14px;cursor:pointer;border:none}
+  .btn-gold{background:#D4AF37;color:#111}
+  .btn-gold:hover{background:#E8C96A}
+  .btn-outline{border:1px solid #D4AF37;color:#F5E6B8;margin-left:10px;background:transparent}
+  .btn-outline:hover{background:#D4AF37;color:#111}
+  .btn-green{background:#25D366;color:white}
+  .section{max-width:1100px;margin:auto;padding:50px 20px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card-black{background:#111;color:white;padding:32px;border-radius:12px}
+  .card-black h2{color:#E8C96A;font-size:28px;margin-bottom:20px;font-weight:normal}
+  .card-black li{list-style:none;margin:16px 0;font-family:Arial,sans-serif;font-size:15px;line-height:1.5}
+  .card-black li b{color:#E8C96A}
+  .card-white{background:white;padding:32px;border-radius:12px;border:1px solid #E5D9B8}
+  .card-white h2{font-size:28px;margin-bottom:20px;font-weight:normal;text-align:center}
+  .tag{display:inline-block;border:1px solid #C9A86A;padding:8px 14px;border-radius:20px;margin:5px;font-family:Arial,sans-serif;font-size:13px;cursor:pointer;background:white}
+  .tag:hover{background:#F8F3E8}
+  .tag.active{background:#D4AF37;color:#111;border-color:#D4AF37}
+  .cta{background:#111;color:white;text-align:center;padding:50px 20px}
+  .cta h2{font-size:32px;color:#F5E6B8;font-weight:normal}
+  .cta p{font-family:Arial,sans-serif;margin:12px 0 22px;color:#ddd}
+  .responsable-wrap{display:flex;justify-content:flex-end;padding:10px 30px 35px;background:#F8F3E8}
+  .responsable{text-align:center}
+  .responsable img{width:115px;height:115px;object-fit:cover;border-radius:50%;border:3px solid #D4AF37;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+  .responsable .role{margin-top:10px;font-size:16px;color:#8A6A1A}
+  .responsable .name{font-size:12px;letter-spacing:2px;color:#111;text-transform:uppercase;margin-top:3px}
+  .form-box{max-width:600px;margin:25px auto 0;background:white;padding:25px;border-radius:12px;text-align:left;color:#111}
+  .form-box label{font-family:Arial,sans-serif;font-size:13px;font-weight:bold}
+  .form-box input,.form-box select{width:100%;padding:12px;margin:6px 0 14px;border:1px solid #ddd;border-radius:6px;font-size:14px}
+  .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;z-index:100;box-shadow:0 4px 15px rgba(0,0,0,.3)}
+  footer{background:#000;color:#aaa;text-align:center;padding:18px;font-family:Arial,sans-serif;font-size:12px}
+  footer a{color:#E8C96A;text-decoration:none}
+  @media(max-width:700px){
+    .grid{grid-template-columns:1fr}
+    .hero img{height:380px}
+    .hero-box{left:3%;right:3%;bottom:5%;padding:20px}
+    .hero-box h1{font-size:28px}
+    nav a{margin:0 7px;font-size:11px}
+    .btn-outline{margin-left:0;margin-top:10px}
+    .responsable-wrap{justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <img src="logo.jpeg" alt="AUREA AGENCY">
+  <p>Élégance • Prestige • Excellence</p>
+  <div class="phone-top">
+    <a href="https://wa.me/24104489787?text=Bonjour%20AUREA%2C%20je%20veux%20un%20devis">WhatsApp : +241 04 48 97 87</a>
+  </div>
+</div>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#prestations">Nos Prestations</a>
+  <a href="#evenements">Événements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="accueil">
+  <img src="fond.png.jpeg" alt="Hôtesses AUREA à Libreville">
+  <div class="hero-box">
+    <h1>L'accueil qui donne le ton à votre événement</h1>
+    <p>Hôtesses professionnelles pour vos événements haut de gamme à Libreville. Sourire, élégance, protocole.</p>
+    <a class="btn btn-gold" href="https://wa.me/24104489787?text=Bonjour%20AUREA%2C%20je%20veux%20un%20devis%20pour%20mon%20%C3%A9v%C3%A9nement%20%C3%A0%20Libreville">Demander un devis</a>
+    <a class="btn btn-outline" href="#prestations">Découvrir nos services</a>
+  </div>
+</div>
+
+<div class="section" id="prestations">
+  <div class="grid">
+    <div class="card-black">
+      <h2>Nos Prestations</h2>
+      <ul>
+        <li><b>• Accueil & Orientation</b><br>Accueil des invités, orientation, sourire, présentation</li>
+        <li><b>• Gestion des entrées</b><br>Listes, badges, contrôle, gestion du flux</li>
+        <li><b>• Accompagnement VIP & Protocole</b><br>Accompagnement personnalisé, placement, gestion VIP</li>
+        <li><b>• Coordination sur site</b><br>Brief équipe, coordination, logistique</li>
+      </ul>
+      <br>
+      <a class="btn btn-gold" href="#contact">Choisir une prestation</a>
+    </div>
+    <div class="card-white" id="evenements">
+      <h2>Types d'événements</h2>
+      <p style="font-family:Arial,sans-serif;font-size:13px;color:#888;margin-bottom:10px;text-align:center">Clique sur un type pour le choisir dans le formulaire :</p>
+      <button class="tag" onclick="choisirEvent('Mariage')">Mariage</button>
+      <button class="tag" onclick="choisirEvent('Gala / Soirée privée')">Gala / Soirée privée</button>
+      <button class="tag" onclick="choisirEvent('Concert / Soirée')">Concert / Soirée</button>
+      <button class="tag" onclick="choisirEvent('Lancement de marque')">Lancement de marque</button>
+      <button class="tag" onclick="choisirEvent('Conférence / Séminaire')">Conférence / Séminaire</button>
+      <button class="tag" onclick="choisirEvent('Salon / Inauguration')">Salon / Inauguration</button>
+      <button class="tag" onclick="choisirEvent('Accueil aéroport / Transfert VIP')">Accueil aéroport / Transfert VIP</button>
+      <button class="tag" onclick="choisirEvent('Événement d\'entreprise')">Événement d'entreprise</button>
+      <p style="font-family:Arial,sans-serif;font-size:14px;margin-top:20px;line-height:1.6;color:#555">Une équipe formée, ponctuelle et discrète. Tenue noire + foulard doré, reconnaissable et élégante.</p>
+    </div>
+  </div>
+</div>
+
+<div class="responsable-wrap">
+  <div class="responsable">
+    <img src="fond.responsable .jpeg" alt="Responsable AUREA AGENCY">
+    <p class="role">Responsable</p>
+    <p class="name">AUREA AGENCY</p>
+  </div>
+</div>
+
+<div class="cta" id="contact">
+  <h2>Parlons de votre événement</h2>
+  <p>Réponse en moins de 24h - Libreville, Gabon - WhatsApp : +241 04 48 97 87</p>
+
+  <div class="form-box">
+    <label>Votre nom</label>
+    <input type="text" id="nom" placeholder="Ex : Mme Ondo">
+    <label>Type d'événement</label>
+    <select id="typeEvent">
+      <option>Mariage</option>
+      <option>Gala / Soirée privée</option>
+      <option>Concert / Soirée</option>
+      <option>Lancement de marque</option>
+      <option>Conférence / Séminaire</option>
+      <option>Salon / Inauguration</option>
+      <option>Accueil aéroport / Transfert VIP</option>
+      <option>Événement d'entreprise</option>
+    </select>
+    <label>Date de l'événement</label>
+    <input type="date" id="dateEvent">
+    <label>Nombre d'hôtesses souhaitées</label>
+    <input type="number" id="nbHotesses" placeholder="Ex : 4">
+    <button class="btn btn-green" style="width:100%" onclick="envoyerWhatsApp()">Envoyer sur WhatsApp</button>
+    <p style="font-family:Arial,sans-serif;font-size:12px;color:#888;margin-top:10px;text-align:center">En cliquant, WhatsApp s'ouvre avec ton message déjà écrit.</p>
+  </div>
+  <br>
+  <a class="btn btn-gold" href="https://wa.me/24104489787?text=Bonjour%20AUREA%2C%20je%20veux%20un%20devis">Discuter directement sur WhatsApp</a>
+  <br><br>
+  <a href="tel:+24104489787" style="color:#fff;font-family:Arial,sans-serif;font-size:14px">Ou appeler directement : +241 04 48 97 87</a>
+</div>
+
+<footer>AUREA AGENCY • Libreville, Gabon • WhatsApp : <a href="https://wa.me/24104489787">+241 04 48 97 87</a> • Élégance • Prestige • Excellence • © 2026 AUREA Agency</footer>
+
+<a class="whatsapp-float" href="https://wa.me/24104489787?text=Bonjour%20AUREA%2C%20je%20veux%20un%20devis" target="_blank" title="Discuter sur WhatsApp">💬</a>
+
+<script>
+function choisirEvent(type){
+  document.getElementById('typeEvent').value = type;
+  document.querySelectorAll('.tag').forEach(function(b){ b.classList.remove('active'); if(b.textContent.trim()===type) b.classList.add('active'); });
+  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+}
+function envoyerWhatsApp(){
+  var nom = document.getElementById('nom').value || 'Client';
+  var type = document.getElementById('typeEvent').value;
+  var date = document.getElementById('dateEvent').value || 'à confirmer';
+  var nb = document.getElementById('nbHotesses').value || 'à confirmer';
+  var msg = 'Bonjour AUREA, je suis ' + nom + '. Je veux un devis pour : ' + type + '. Date : ' + date + '. Nombre d\'hôtesses : ' + nb + '. Merci !';
+  window.open('https://wa.me/24104489787?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
+
+</body>
+</html>
